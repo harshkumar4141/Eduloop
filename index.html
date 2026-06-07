@@ -1,135 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EduLoop - Home</title>
-    <link rel="stylesheet" href="index.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLoop</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="../assets/loop.png" type="image/x-icon">
-  </head>
-  <body>
-    <header class="navbar-wrapper">
-      <div class="navbar-container">
-        <div class="logo"><img src="../assets/logo.png" alt=""></div>
-        <nav class="nav-links">
-            <div class="dropdown-trigger">
-              <button class="dropdown-btn nav-btn">Features <i class="fa-solid fa-chevron-down"></i></button>
-              <div class="features-dropdown">
-                <a href="../lostAndFound/lost-found.html" class="dropdown-item card1">Lost & Found <span>🔍</span></a>
-                <a href="../Announcement/announcement.html" class="dropdown-item card2">Announcement <span>📢</span></a>
-                <a href="../Vault/vault.html" class="dropdown-item card3">Vault <span>📁</span></a>
-                <a href="../EventsAndFests/event.html" class="dropdown-item card4">Events & Fests <span>📅</span></a>
-              </div>
-            </div>
-          <a href="about.html" class="nav-btn">About US</a>
-        </nav>
-        <div class="user-avatar-zone">
-          <a href="homePage/profile.html">
-            <img src="../assets/profile.png" alt="Profile View" class="nav-avatar" />
-          </a>
-        </div>
-      </div>
-    </header>
 
-    <main class="dashboard-wrapper">
-      <section class="welcome-banner">
-        <h1>Hello, <span class="student-name-banner">Student</span> 👋</h1>
-        <p>Your centralized campus dashboard for the day.</p>
-      </section>
+</head>
 
-      <div class="bento-grid">
+<body>
+    <div class="bg">
         
-        <section class="bento-card announcements-card">
-          <div class="card-header">
-            <h3><i class="fa-solid fa-bullhorn"></i> Announcements</h3>
-            <span class="live-pulse"></span>
-          </div>
-          <div class="announcement-list">
-            <div class="announcement-item urgency-high">
-              <div class="meta-row">
-                <span class="badge badge-academic">Academic</span>
-                <span class="item-time">Today</span>
-              </div>
-              <h4>End-Semester Examination Timetable Released for B.Tech Y2</h4>
+        <nav class="navbar">
+            <img width="80px" height="80px" src="assets/logo.png" alt="eduLoop Logo">
+            <ul>
+                <li><a href="homePage/index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="login-signup-btn">
+                <button class="btn logIn"><a href="Login/login.html">Login</a></button>
+                <button class="btn signUp"><a href="signup/signup.html">Sign up</a></button>
             </div>
-            <div class="announcement-item">
-              <div class="meta-row">
-                <span class="badge badge-fest">Fest</span>
-                <span class="item-time">May 28</span>
-              </div>
-              <h4>Hackathon 2026 Registrations are closing tonight at 11:59 PM</h4>
-            </div>
-          </div>
-          <a href="../Announcement/announcement.html" class="card-action-link">View All Notices <i class="fa-solid fa-arrow-right"></i></a>
-        </section>
-
-        <section class="bento-card lost-found-card">
-          <div class="card-header">
-            <h3><i class="fa-solid fa-magnifying-glass"></i> Lost & Found</h3>
-          </div>
-          <div class="feed-container">
-            <div class="feed-item">
-              <div class="item-thumb"><i class="fa-solid fa-key"></i></div>
-              <div class="item-details">
-                <div class="title-row">
-                  <h5>Boat Airdopes 131 Case</h5>
-                  <span class="feed-tag tag-found">Found</span>
+        </nav>
+        <main>
+            <h1 class="main-heading">Your Campus Life, Simplified</h1>
+            <p class="sub-heading">Ditch the cluttered group chats. Manage your schedule, find lost items, and connect with peers in one organized space.</p>
+            <button class="get-started"><a href="signup/signup.html">Get Started &#8594</a></button>
+            
+            <div class="cards" id="carouselTrack">
+                <div class="card1 feature-card">
+                    <div class="heading-of-cards">
+                        <h2>Lost It? Found It.</h2> <img width="54px" height="50px" src="assets/lost-found.png" alt="">
+                    </div>
+                    <p>The fastest way to recover lost items. Snap a picture, drop a pin, and let the campus network do the rest.</p>
                 </div>
-                <p>Near Block 3 Seminar Hall Canteen</p>
-              </div>
-            </div>
-            <div class="feed-item">
-              <div class="item-thumb lost-thumb"><i class="fa-solid fa-wallet"></i></div>
-              <div class="item-details">
-                <div class="title-row">
-                  <h5>Black Leather Wallet</h5>
-                  <span class="feed-tag tag-lost">Lost</span>
+                <div class="card2 feature-card">
+                    <div class="heading-of-cards">
+                        <h2>The Academic Vault </h2><img width="50px" height="50px" src="assets/vault.png" alt="">
+                    </div>
+                    <p>A heavily organized, searchable repository for your lecture notes, lab manuals, and exam prep.</p>
                 </div>
-                <p>Dropped between Football ground & Library</p>
-              </div>
+                <div class="card3 feature-card">
+                    <div class="heading-of-cards">
+                        <h2>Flash Announcements </h2><img width="50px" height="50px" src="assets/loudspeaker.png" alt="">
+                    </div>
+                    <p>Never miss an urgent update. Get instant alerts for sudden class cancellations and deadlines.</p>
+                </div>
+                <div class="card4 feature-card">
+                    <div class="heading-of-cards">
+                        <h2>Campus Events & Fests </h2><img width="80px" height="50px" src="assets/calendar.png" alt="">
+                    </div>
+                    <p>Don't miss out on college life. Track upcoming hackathons, cultural fests, and guest lectures.</p>
+                </div>
             </div>
-          </div>
-          <a href="../lostAndFound/lost-found.html" class="btn btn-pill-solid">Open Lost & Found</a>
-        </section>
+        </main>
+    </div>
+</body>
 
-        <section class="bento-card vault-card">
-          <div class="card-header">
-            <h3><i class="fa-solid fa-folder-open"></i> The Academic Vault</h3>
-          </div>
-          <div class="recent-uploads">
-            <p class="section-label">Recent Uploads</p>
-            <div class="file-row">
-              <span class="file-type-badge pdf">PDF</span>
-              <span class="file-name">CSE-302 Data Structures Mid-Sem Paper</span>
-            </div>
-            <div class="file-row">
-              <span class="file-type-badge zip">ZIP</span>
-              <span class="file-name">Digital Electronics Lecture Slides 1-10</span>
-            </div>
-          </div>
-          <a href="../Vault/vault.html" class="card-action-link">Explore Materials <i class="fa-solid fa-arrow-right"></i></a>
-        </section>
-
-        <section class="bento-card events-card">
-          <div class="card-header">
-            <h3><i class="fa-solid fa-calendar-days"></i> Upcoming Events</h3>
-          </div>
-          <div class="event-showcase">
-            <div class="calendar-badge">
-              <span class="cal-month">MAY</span>
-              <span class="cal-day">30</span>
-            </div>
-            <div class="event-info">
-              <h4>CodeLoop '26 Hackathon</h4>
-              <p><i class="fa-solid fa-location-dot"></i> Main Auditorium</p>
-              <p><i class="fa-solid fa-clock"></i> 4:00 PM onwards</p>
-            </div>
-          </div>
-          <a href="../EventsAndFests/events.html" class="btn btn-pill-muted">View All Events</a>
-        </section>
-
-      </div>
-    </main>
-    <script src="index.js"></script>
-  </body>
 </html>
