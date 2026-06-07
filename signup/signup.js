@@ -56,7 +56,7 @@ signupForm.addEventListener("submit", async (e) => {
       localStorage.removeItem("authToken");
 
       localStorage.setItem("useremail", email);
-
+      localStorage.setItem("studentName",fullName );
       const serverUserId = data.userId || (data.user && data.user._id);
 
       if (serverUserId) {

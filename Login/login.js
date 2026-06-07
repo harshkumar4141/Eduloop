@@ -48,7 +48,7 @@ loginForm.addEventListener("submit", async (e) => {
       }
 
       setTimeout(() => {
-        window.location.href = "../homePage/index.html"; 
+        window.location.href = "../index.html"; // Make sure this path is correct for your folder structure
       }, 1000);
 
     } else {
